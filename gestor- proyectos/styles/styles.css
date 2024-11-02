@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo más claro */
+}
+
+header {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    padding: 10px; /* Tamaño reducido del espaciado para disminuir la altura */
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centrar contenido */
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para una mejor alineación */
+    margin: 20px 0;
+}
+
+form label {
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%; /* Asegurarse de que los inputs ocupen el 100% del ancho permitido */
+    max-width: 400px; /* Ancho máximo si deseas controlar el tamaño */
+    padding: 10px;
+    margin-bottom: 20px; /* Espacio entre cada input */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el ratón */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#project-list {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0;
+}
+
+.project-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white; /* Fondo blanco para los proyectos */
+    border: 1px solid #ddd; /* Bordes para distinguir cada proyecto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.task-table {
+    width: 300px; /* Ancho fijo de la tabla */
+    border-collapse: collapse;
+    margin: 10px auto; /* Centrar la tabla */
+}
+
+.task-table th,
+.task-table td {
+    border: 1px solid #ddd;
+    padding: 8px; /* Aumentar el espaciado dentro de la celda */
+}
+
+.task-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Ajustar el tamaño de la columna "Completada" */
+.task-table td:nth-child(2) {
+    width: 50px; /* Ancho específico para la columna completada */
+}
+
+#progress-chart {
+    max-width: 300px;
+    height: 500px; /* Altura para el gráfico */
+}
+
+@media (max-width: 600px) {
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 90%; /* Ajustar más ancho para móviles */
+    }
+
+    .task-table {
+        width: 90%; /* Hacer que la tabla ocupe más espacio en pantallas pequeñas */
+    }
+}
